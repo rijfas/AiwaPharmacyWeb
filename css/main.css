@@ -1,0 +1,36 @@
+.section-search input {
+  padding: 5px !important;
+  font-size: 18px !important;
+  width: 90% !important;
+  border: #f4f4f4 3px solid !important;
+}
+
+.section-follow .fa-4x {
+  margin: 5px 10px;
+}
+
+.bold{
+  font-weight: bold !important;
+}
+
+.dropdown-content li>a, .dropdown-content li>span{
+  color: #2962FF;
+}
+
+.logo-red{
+  padding: 0 10px 0 10px;
+}
+.custom-icon-box{
+  transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -webkit-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+}
+.custom-icon-box:hover{
+  transform: scale(1.05);
+}
+.custom-icon-box-link{
+  text-decoration: none;
+  color: black;
+}
+

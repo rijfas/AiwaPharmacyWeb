@@ -1,0 +1,20 @@
+{
+    "categories":[
+        {
+            "categorieName":"Sports Nutritians",
+            "items":[
+                {
+                    "name":"myproduct",
+                    "image":"ASZX7242.JPG",
+                    "description":"bla bla bla",
+                    "price":"60.00"
+                },{
+                    "name":"oafffa",
+                    "image":"ASZX7242.JPG",
+                    "description":"bla bla bla",
+                    "price":"60.00"
+                }
+            ]
+        }
+    ]
+}

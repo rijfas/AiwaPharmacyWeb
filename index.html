@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+    crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aiwa Pharmacy</title>
+</head>
+
+<body id="home" class="scrollspy">
+  <!-- Navbar -->
+  <div class="navbar-fixed">
+    <nav class="blue accent-4">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo aiwa-logo">AIWA&nbsp;<span class="red logo-red">PHARMACY</span></a>
+          <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#search">Search</a>
+            </li>
+            <li>
+              <a href="#products-header">Products</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.google.com/maps/place/Aiwa+Pharmacy+%26+Nutritions/@25.4062567,55.4422994,18z/data=!4m5!3m4!1s0x3e5f59d5ee8fed99:0x608839989dc2b85!8m2!3d25.4061332!4d55.4426105">Directions</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <ul class="sidenav" id="mobile-nav">
+    <li>
+      <a href="#home">Home</a>
+    </li>
+    <li>
+      <a href="#search">Search</a>
+    </li>
+    <li>
+      <a href="#products">Products</a>
+    </li>
+    <li>
+      <a href="#contact">Contact</a>
+    </li>
+    <li>
+        <a target="_blank" href="https://www.google.com/maps/place/Aiwa+Pharmacy+%26+Nutritions/@25.4062567,55.4422994,18z/data=!4m5!3m4!1s0x3e5f59d5ee8fed99:0x608839989dc2b85!8m2!3d25.4061332!4d55.4426105">Directions</a>
+    </li>
+  </ul>
+
+  <!-- Section: Slider -->
+  <section class="slider">
+    <ul class="slides">
+      <li>
+        <img src="img/slide-1.JPG">
+        
+        <div class="caption center-align">
+          <h2>First Text Here</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, provident eos dicta unde debitis</h5>
+        </div>
+      </li>
+      <li>
+        <img src="img/slide-2.JPG">
+        
+        <div class="caption left-align">
+          <h2>Second text here</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus delectus inventore neque impedit</h5>
+        </div>
+      </li>
+      <li>
+        <img src="img/slide-3.JPG">
+        
+        <div class="caption right-align">
+          <h2>Third text here</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsum molestias excepturi doloremque</h5>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Section: Search -->
+  <section id="search" class="section section-search blue accent-4 white-text center scrollspy">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h3>Search Products</h3>
+          <div class="input-field">
+            <input type="text" class="white grey-text autocomplete" id="autocomplete-input" onchange="searchProduct(this.value)">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Icon Boxes -->
+  <section class="section section-icons grey lighten-4 center">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m4 custom-icon-box">
+          <a target="_blank" href="https://www.google.com/maps/place/Aiwa+Pharmacy+%26+Nutritions/@25.4062567,55.4422994,18z/data=!4m5!3m4!1s0x3e5f59d5ee8fed99:0x608839989dc2b85!8m2!3d25.4061332!4d55.4426105" class="custom-icon-box-link">
+          <div class="card-panel">
+            <i class="material-icons large blue-text">room</i>
+            <h4>Locate Aiwa</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, tempore?</p>
+          </div>
+         </a>
+        </div>
+        <div class="col s12 m4 custom-icon-box">
+          <a href="#products-header" class="custom-icon-box-link">
+          <div class="card-panel">
+            <i class="material-icons large blue-text">store</i>
+            <h4>Buy Online</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, tempore?</p>
+          </a>
+          </div>
+        </div>
+        <div class="col s12 m4 custom-icon-box">
+          <a href="#products" class="custom-icon-box-link">
+          <div class="card-panel">
+            <i class="material-icons large blue-text">rate_review</i>
+            <h4>Get in Touch</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, tempore?</p>
+          </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Products -->
+  <section id="products-header" class="section blue accent-4 white-text center scrollspy">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h3>Popular Products</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section section-popular scrollspy">
+    <div class="container" id="products" >
+    </div>
+  </section>
+
+
+  <!-- Section: Contact -->
+  <section id="contact" class="section section-contact scrollspy">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card-panel blue accent-4 white-text center">
+            <i class="material-icons">email</i>
+            <h5>Contact Us For More Info</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium fugit tempore hic enim possimus molestias
+              quisquam impedit corrupti eveniet.</p>
+          </div>
+          <div id="map-tile">
+            <iframe src="https://maps.google.com/maps?q=aiwa%20pharmacy%20&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="card-panel blue lighten-5">
+            <form action="mailto:aiwapharmacy@gmail.com" method="post" enctype="text/plain">
+            <h5>Write to us</h5>
+            <div class="input-field">
+              <input type="text" placeholder="Name" name="name">
+            </div>
+            <div class="input-field">
+              <input type="text" placeholder="Email" name="email">
+            </div>
+            <div class="input-field">
+              <input type="text" placeholder="Phone" name="phone">
+            </div>
+            <div class="input-field">
+              <textarea class="materialize-textarea" placeholder="Enter Message" name="comment"></textarea>
+            </div>
+            <input type="submit" value="Submit" class="btn blue accent-4">
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section: Follow -->
+  <section class="section section-follow blue accent-4 white-text center">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h4>Follow AiwaPharmacy</h4>
+          <p>Follow us on social media for special offers</p>
+          <a target="_blank" href="https://www.facebook.com/pages/category/Medical-Center/Aiwa-Pharmacy-Ajman-2100949303526585/" class="white-text">
+            <i class="fab fa-facebook fa-3x"></i>
+          </a>
+          <a target="_blank" href="https://wa.me/971558525262" class="white-text">
+            <i class="fab fa-whatsapp fa-3x"></i>
+          </a>
+          <a target="_blank" href="https://www.linkedin.com/in/aiwa-pharmacy-84022b1b4/" class="white-text">
+            <i class="fab fa-linkedin fa-3x"></i>
+          </a>
+          <a target="_blank" href="tel:+971-6-744-5575" class="white-text">
+            <i class="fas fa-phone fa-3x"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="section blue accent-4 white-text center">
+    <p class="flow-text">Aiwapharmacy &copy; 2020 </p>
+  </footer>
+
+  <!--JavaScript at end of body for optimized loading-->
+  <script src="js/materialize.min.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/search.js"></script>
+  <script>
+    // For Sidenav
+    const sideNav = document.querySelector('.sidenav');
+    M.Sidenav.init(sideNav, {});
+
+    // For Slider
+    const slider = document.querySelector('.slider');
+    M.Slider.init(slider, {
+      indicators: false,
+      height: 500,
+      transition: 500,
+      interval: 6000
+    });
+
+    // For Autocomplete
+    const ac = document.querySelector('.autocomplete');
+    M.Autocomplete.init(ac, {
+      data: {}
+    });
+
+    // Material Boxed
+    const mb = document.querySelectorAll('.materialboxed');
+    M.Materialbox.init(mb, {});
+
+    // ScrollSpy
+    const ss = document.querySelectorAll('.scrollspy');
+    M.ScrollSpy.init(ss, {});
+
+  </script>
+</body>
+
+</html>
