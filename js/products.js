@@ -4,8 +4,11 @@ window.onload = function(){
 
 xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("products").removeChild(document.getElementById("preLoader"));
         var productData = JSON.parse(this.responseText);
         SetProductsView(productData);
+    }else{
+        document.getElementById("products").innerHTML = ' <div id="preLoader" class="preloader-wrapper big active"><div class="spinner-layer spinner-blue-only"><div class="circle-clipper left"><div class="circle"></div></div><div class="gap-patch"><div class="circle"></div></div><div class="circle-clipper right"><div class="circle"></div></div></div></div>';
     }
 };
 xmlhttp.open("GET", url, true);
