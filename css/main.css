@@ -45,3 +45,7 @@ html {
     margin-left: 0px !important;
   }
 }
+.flex {
+  display: flex !important;
+  flex-wrap: wrap !important;
+}
