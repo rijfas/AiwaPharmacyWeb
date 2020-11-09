@@ -49,3 +49,6 @@ html {
   display: flex !important;
   flex-wrap: wrap !important;
 }
+.centerfix{
+  margin:auto !important;
+}

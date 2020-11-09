@@ -40,6 +40,7 @@ function SetProductsView(data){
             outerColumn.classList.add('col');
             outerColumn.classList.add('s12');
             outerColumn.classList.add('m4');
+            outerColumn.classList.add('centerfix');
             var card = document.createElement('div');
             card.classList.add('card');
             card.classList.add('z-depth-3');
